@@ -1,0 +1,2 @@
+# A-RAG-System-for-Exploring-the-Biosynthesis-and-Biological-Activities-of-THIQs
+这是我的毕业设计：四氢异喹啉生物碱化学空间的探索及基于RAG的知识检索平台。包括四氢异喹啉生物碱化学空间的探索及基于RAG的知识检索平台的搭建。目的是构建一个四氢异喹啉生物碱的专属数据集和用于相关文献的检索生成和生源及活性挖掘的专家模型。
