@@ -6,7 +6,7 @@
 ## 一、文献检索
 1. PubMed数据库
 
-检索词：关键词：tetrahydroisoquinoline (THIQ)；benzylisoquinoline (BIAs)；phenethylisoquinoline (PEIAs)；ipecac (IAs)；Amaryllidaceae (AmAs) alkaloids；1-benzylisoquinolines（1-BIAs）；bisbenzylisoquinolines（bisBIAs）；morphinans；aporphines；protoberberines (BBRs）；phthalideisoquinolines (PQs）；benzophenanthridines (BZPs）；protopines；pavines
+检索词：tetrahydroisoquinoline (THIQ)；benzylisoquinoline (BIAs)；phenethylisoquinoline (PEIAs)；ipecac (IAs)；Amaryllidaceae (AmAs) alkaloids；1-benzylisoquinolines（1-BIAs）；bisbenzylisoquinolines（bisBIAs）；morphinans；aporphines；protoberberines (BBRs）；phthalideisoquinolines (PQs）；benzophenanthridines (BZPs）；protopines；pavines
 
 
 2. WOS数据库
