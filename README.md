@@ -5,10 +5,6 @@
 
 ## 一、文献检索
 1. PubMed数据库
-
-检索词：tetrahydroisoquinoline (THIQ)；benzylisoquinoline (BIAs)；phenethylisoquinoline (PEIAs)；ipecac (IAs)；Amaryllidaceae (AmAs) alkaloids；1-benzylisoquinolines（1-BIAs）；bisbenzylisoquinolines（bisBIAs）；morphinans；aporphines；protoberberines (BBRs）；phthalideisoquinolines (PQs）；benzophenanthridines (BZPs）；protopines；pavines
-
-
 2. WOS数据库
 3. Scopus数据库
 4. 数据清洗
@@ -29,3 +25,6 @@
    - 文献摘要→片段列表→Embedding模型→向量→向量数据库
 2. 回答系统
    - 用户问题→Embedding模型→向量数据库→召回→重排→大模型
+
+
+**前言**
