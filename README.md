@@ -1,6 +1,9 @@
 # An Expert Model Based on a THIQAs Literature Knowledge Base and RAG Technology
 这是我的毕业设计，聚焦于四氢异喹啉生物碱（Tetrahydroisoquinoline Alkaloids, THIQAs）领域，构建一个 THIQAs 的专属数据集和基于THIQAs文献知识库及检索增强生成（RAG）技术的专家模型。
 
+<img width="1832" height="420" alt="general" src="https://github.com/user-attachments/assets/1ae54d72-7381-4cc3-833e-e94de8becbf3" />
+
+
 # 目录
 
 ## 一、前言
