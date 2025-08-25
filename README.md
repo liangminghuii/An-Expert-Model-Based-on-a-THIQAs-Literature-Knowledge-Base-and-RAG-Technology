@@ -47,6 +47,40 @@
 
    我们在三个主要数据库——Web of Science、Scopus 和 PubMed 中进行了文献检索，使用 "tetrahydroisoquinoline" 及其亚类如 "benzylisoquinoline"、 "protoberberines" 等作为主要检索词检索所有类型的文章，然后收集其 DOI 和 Abstract 信息，最后整合三个数据库的文献并进行去重等数据清洗工作。
 
-   1.PubMed数据库
+**三、文献筛选**
+
+   文献筛选采用火山引擎的批量推理进行，通过DeepSeek-R1模型，阅读文献摘要，筛选出与四氢异喹啉生物碱相关的文献。
+
+   1.数据准备
+
+         import json
+         ## 你的数据，自行处理成
+         data = []
+         ## 必须是list[dict]结构，
+         huoshan_data_jsonl = [
+            {
+               "custom_id": f"uuid-xxxx", # 必须唯一
+               "body": {
+                  "messages": [
+                     {"role": "system", "content": "你的系统提示词"},
+                     {
+                        "role": "user",
+                        "content": "你的文本内容",
+                     },
+                  ],
+                  "temperature": 0.0,
+                  # 其他参数
+               },
+            }
+            for d in data
+         ]
+      huoshan_data_jsonl = sum(huoshan_data_jsonl, [])
+
+      with open("hs_data.jsonl", "w", encoding="utf-8") as f:
+         for d in huoshan_data_jsonl:
+            f.write(json.dumps(d, ensure_ascii=False) + "\n")
+      len(huoshan_data_jsonl), huoshan_data_jsonl[0]
+         
+   
       
    
