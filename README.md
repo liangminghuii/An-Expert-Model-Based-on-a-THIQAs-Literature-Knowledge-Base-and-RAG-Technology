@@ -51,8 +51,12 @@
 
    文献筛选采用火山引擎的批量推理进行，通过DeepSeek-R1模型，阅读文献摘要，筛选出与四氢异喹啉生物碱相关的文献。
 
-   1.数据准备
-
+   1.数据准备————转换为批量推理所需要的json格式
+   
+   官网地址：https://console.volcengine.com/tos/bucket?
+   
+   样例，需要根据你自己的数据进行需改，详细见 batch-ref.ipynb
+   
       import json
       ## 你的数据，自行处理成
       data = []
@@ -81,6 +85,54 @@
             f.write(json.dumps(d, ensure_ascii=False) + "\n")
       len(huoshan_data_jsonl), huoshan_data_jsonl[0]
          
-   
+   转换完，检查数据是否符合规定
+
+      import json
+      def check_jsonl_file(file_path):
+          with open(file_path, "r", encoding="utf-8") as file:
+              total = 0
+              custom_id_set = set()
+              for line in file:
+                  if line.strip() == "":
+                      continue
+                  try:
+                      line_dict = json.loads(line)
+                  except json.decoder.JSONDecodeError:
+                      raise Exception(f"批量推理输入文件格式错误，第{total + 1}行非json数据")
+                  if not line_dict.get("custom_id"):
+                      raise Exception(
+                          f"批量推理输入文件格式错误，第{total + 1}行custom_id不存在"
+                      )
+                  if not isinstance(line_dict.get("custom_id"), str):
+                      raise Exception(
+                          f"批量推理输入文件格式错误, 第{total + 1}行custom_id不是string"
+                      )
+                  if line_dict.get("custom_id") in custom_id_set:
+                      raise Exception(
+                          f"批量推理输入文件格式错误，custom_id={line_dict.get('custom_id', '')}存在重复"
+                      )
+                  else:
+                      custom_id_set.add(line_dict.get("custom_id"))
+                  if not isinstance(line_dict.get("body", ""), dict):
+                      raise Exception(
+                          f"批量推理输入文件格式错误，custom_id={line_dict.get('custom_id', '')}的body非json字符串"
+                      )
+                  total += 1
+          return total
       
+      
+      file_path = "hs_data.jsonl"
+      total_lines = check_jsonl_file(file_path)
+      print(f"文件中有效JSON数据的行数为: {total_lines}")
+      
+   解析最终的结果
+      with open("results.jsonl", "r", encoding="utf-8") as f:
+          data = [json.loads(line) for line in f.readlines()]
+      print(len(data))
+      
+      data_dict = {
+          d["custom_id"]: d["response"]["body"]["choices"][0]["message"]["content"]
+          for d in data
+      }
+
    
