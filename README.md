@@ -1,4 +1,4 @@
-# An Expert Model Based on a THIQAs Literature Knowledge Base and RAG Technology
+<img width="3019" height="556" alt="image" src="https://github.com/user-attachments/assets/d282bd70-10a6-4b40-b828-c32f09b70f41" /># An Expert Model Based on a THIQAs Literature Knowledge Base and RAG Technology
 这是我的毕业设计，聚焦于四氢异喹啉生物碱（Tetrahydroisoquinoline Alkaloids, THIQAs）领域，构建一个 THIQAs 的专属数据集和基于THIQAs文献知识库及检索增强生成（RAG）技术的专家模型。
 
 # 目录
@@ -145,6 +145,47 @@
    <img width="2505" height="1041" alt="image" src="https://github.com/user-attachments/assets/b1b95b7b-e0cb-46dc-8b49-9afd6511de3f" />
 
    <img width="2508" height="1530" alt="image" src="https://github.com/user-attachments/assets/30583194-01da-4a54-883e-2edbd4c97068" />
+
+   <img width="2506" height="1068" alt="1756139413880" src="https://github.com/user-attachments/assets/f99a5a35-2011-46e5-87d8-56d3238b0b07" />
+
+  <img width="3019" height="556" alt="image" src="https://github.com/user-attachments/assets/ab1b8796-4170-4839-9505-c92b2a0e1688" />
+
+  上传之前处理好的json格式数据
+
+  <img width="3064" height="574" alt="image" src="https://github.com/user-attachments/assets/8901a714-d8fe-4e55-9d80-3214cab21901" />
+
+在火山方舟里找到批量处理，新建批量处理
+
+<img width="2566" height="1528" alt="image" src="https://github.com/user-attachments/assets/faa4c722-0340-415f-a3d1-f4a85669c97b" />
+
+选择推理模型
+
+<img width="2800" height="1541" alt="image" src="https://github.com/user-attachments/assets/baef1e6f-abf4-4b60-a16e-e92ec1ec5c90" />
+
+选择输入数据和输出文件夹，提交
+
+<img width="2779" height="1573" alt="image" src="https://github.com/user-attachments/assets/cbf69c3e-0b2c-4bfb-a575-28a5bdf6fc04" />
+
+输出result如下（部分），后续根据 “"has_tetrahydroisoquinoline_alkaloids\": true” 筛选出与 THIQAs 强相关的文献
+
+<img width="2029" height="496" alt="image" src="https://github.com/user-attachments/assets/9f747f8e-4bf8-4b50-96b2-e00a1099487d" />
+
+**四、信息提取**
+
+**五、化学信息分析**
+
+1.化学分类分析
+获取到 THIQAs 结构信息和生物来源信息后，对其进行分类学统计分析，发现 THIQAs 六界均有分布，分布生物的种类达 1637 种。（详细代码见）
+
+![11d196a7cb17c202a24683fc5d27b93](https://github.com/user-attachments/assets/6ba339a3-f9dc-4f1e-b91a-e6e1648c6338)
+
+
+**六、基于文献知识库和RAG技术的专家模型的搭建**
+  
+
+
+
+
 
 
 
