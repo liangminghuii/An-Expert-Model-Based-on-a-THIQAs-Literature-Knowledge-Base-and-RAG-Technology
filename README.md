@@ -53,7 +53,7 @@
 
    1.数据准备————转换为批量推理所需要的json格式
    
-   官网地址：https://console.volcengine.com/tos/bucket?
+   官网地址：https://console.volcengine.com/tos/bucket
    
    样例，需要根据你自己的数据进行需改，详细见 batch-ref.ipynb
    
@@ -136,4 +136,16 @@
           for d in data
       }
 
+2.批量推理
+
+   官网地址：https://console.volcengine.com/tos/bucket
    
+   先创建桶，用于储存数据
+
+   <img width="2505" height="1041" alt="image" src="https://github.com/user-attachments/assets/b1b95b7b-e0cb-46dc-8b49-9afd6511de3f" />
+
+   <img width="2508" height="1530" alt="image" src="https://github.com/user-attachments/assets/30583194-01da-4a54-883e-2edbd4c97068" />
+
+
+
+
