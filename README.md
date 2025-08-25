@@ -126,6 +126,7 @@
       print(f"文件中有效JSON数据的行数为: {total_lines}")
       
    解析最终的结果
+   
       with open("results.jsonl", "r", encoding="utf-8") as f:
           data = [json.loads(line) for line in f.readlines()]
       print(len(data))
