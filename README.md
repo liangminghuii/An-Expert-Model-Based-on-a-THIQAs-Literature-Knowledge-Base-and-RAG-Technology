@@ -45,5 +45,5 @@
    
 **二、文献检索**
 
-   我们在三个主要数据库——Web of Science(https://www.webofscience.com)、Scopus (https://www.scopus.com)和PubMed(https://pubmed.ncbi.nlm.nih.gov)中进行了文献检索，使用"tetrahydroisoquinoline"及其亚类如"benzylisoquinoline"、"protoberberines"等作为主要检索词检索所有类型的文章。随后，我们使用 LLMs 阅读了摘要，用于确定文章主题是否与 THIQAs 相关的候选论文。
+   我们在三个主要数据库——Web of Science、Scopus 和PubMed 中进行了文献检索，使用"tetrahydroisoquinoline"及其亚类如"benzylisoquinoline"、"protoberberines"等作为主要检索词检索所有类型的文章。随后，我们使用 LLMs 阅读了摘要，用于确定文章主题是否与 THIQAs 相关的候选论文。
    
