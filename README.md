@@ -1,5 +1,5 @@
 # An Expert Model Based on a THIQAs Literature Knowledge Base and RAG Technology
-这是我的毕业设计，聚焦于四氢异喹啉生物碱（Tetrahydroisoquinoline Alkaloids, THIQAs），构建一个 THIQAs 的专属数据集和基于THIQAs文献知识库及检索增强生成（RAG）技术的专家模型。
+这是我的毕业设计，聚焦于四氢异喹啉生物碱（Tetrahydroisoquinoline Alkaloids, THIQAs）领域，构建一个 THIQAs 的专属数据集和基于THIQAs文献知识库及检索增强生成（RAG）技术的专家模型。
 
 # 目录
 
@@ -46,4 +46,7 @@
 **二、文献检索**
 
    我们在三个主要数据库——Web of Science、Scopus 和 PubMed 中进行了文献检索，使用 "tetrahydroisoquinoline" 及其亚类如 "benzylisoquinoline"、 "protoberberines" 等作为主要检索词检索所有类型的文章，然后收集其 DOI 和 Abstract 信息，最后整合三个数据库的文献并进行去重等数据清洗工作。
+
+   1.PubMed数据库
+      
    
